@@ -3,46 +3,56 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="16dp"
     android:orientation="vertical"
     tools:context=".TaskDetailActivity">
 
+    <include layout="@layout/toolbar" />
+
     <TextView
+        style="@style/Title3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Título da Tarefa:"
-        style="@style/Title3"/>
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Título da Tarefa:" />
 
     <EditText
         android:id="@+id/edt_task_title"
         style="@style/Body1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
         android:hint="Adicione um nome para a sua tarefa"
         android:textSize="12sp"
         tools:ignore="TouchTargetSizeCheck" />
 
     <TextView
+        style="@style/Title3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="Descrição da Tarefa:"
-        style="@style/Title3" />
+        android:layout_marginEnd="8dp"
+        android:text="Descrição da Tarefa:" />
 
     <EditText
         android:id="@+id/edt_task_description"
         style="@style/Body1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
         android:hint="Adicione uma descrição para a sua tarefa"
         tools:ignore="TouchTargetSizeCheck" />
 
     <Button
         android:id="@+id/btn_done"
+        style="@style/ButtonPrimary"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        style="@style/ButtonPrimary"
         android:text="Adicionar tarefa" />
 
 </LinearLayout>
